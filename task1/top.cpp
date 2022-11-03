@@ -40,8 +40,6 @@ int main(int argc, char **argv, char **env) {
     top->rst = 0;
     top->en = vbdFlag();
 
-    printf(top->en ? "1" : "0");
-
     // plot RAM input/output, send sample to DAC buffer, and print cycle count
     vbdHex(1, top->data_out & 0xF);
     vbdBar(top->data_out & 0xFF);
