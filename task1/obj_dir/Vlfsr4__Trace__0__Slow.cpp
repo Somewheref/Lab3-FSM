@@ -14,12 +14,12 @@ VL_ATTR_COLD void Vlfsr4___024root__trace_init_sub__TOP__0(Vlfsr4___024root* vlS
     tracep->declBit(c+1,"clk", false,-1);
     tracep->declBit(c+2,"rst", false,-1);
     tracep->declBit(c+3,"en", false,-1);
-    tracep->declBus(c+4,"data_out", false,-1, 4,1);
+    tracep->declBus(c+4,"data_out", false,-1, 8,1);
     tracep->pushNamePrefix("lfsr4 ");
     tracep->declBit(c+1,"clk", false,-1);
     tracep->declBit(c+2,"rst", false,-1);
     tracep->declBit(c+3,"en", false,-1);
-    tracep->declBus(c+4,"data_out", false,-1, 4,1);
+    tracep->declBus(c+4,"data_out", false,-1, 8,1);
     tracep->popNamePrefix(1);
 }
 
@@ -66,5 +66,5 @@ VL_ATTR_COLD void Vlfsr4___024root__trace_full_sub_0(Vlfsr4___024root* vlSelf, V
     bufp->fullBit(oldp+1,(vlSelf->clk));
     bufp->fullBit(oldp+2,(vlSelf->rst));
     bufp->fullBit(oldp+3,(vlSelf->en));
-    bufp->fullCData(oldp+4,(vlSelf->data_out),4);
+    bufp->fullCData(oldp+4,(vlSelf->data_out),8);
 }

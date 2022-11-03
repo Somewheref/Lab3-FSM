@@ -16,7 +16,7 @@ class Vlfsr4___024root final : public VerilatedModule {
     VL_IN8(clk,0,0);
     VL_IN8(rst,0,0);
     VL_IN8(en,0,0);
-    VL_OUT8(data_out,4,1);
+    VL_OUT8(data_out,8,1);
     CData/*0:0*/ __Vclklast__TOP__clk;
     CData/*0:0*/ __Vclklast__TOP__rst;
 
